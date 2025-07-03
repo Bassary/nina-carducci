@@ -88,6 +88,9 @@ body {
 #about-me p {
 	width: 80%;
 	font-size: 14px;
+	/* position et z-index rajouter pour éviter que le texte soit caché dernière un autre élément */
+	position: relative;
+	z-index: 1;
 }
 
 #gallery {
@@ -101,10 +104,12 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #000000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
+
+/* couleur modifiée de blanc à noir, pour une meilleure lisibilité */
 .nav-pills .nav-link {
 	color: #000
 }
